@@ -36,9 +36,13 @@ struct ContentView: View {
                     Button("Save") {
                         let newFriend = Friend (name:newName, birthday:newBirthday)
                         friends.append(newFriend)
+                        newName=""
+                        newBirthday = .now
                     }
                     .padding(.all)
+                    
                     }//Vstack
+                
             }//SafeArea
            }//navigationstack
     }//body
